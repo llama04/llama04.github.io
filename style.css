@@ -1,5 +1,13 @@
-html{
+body{
     color:white;
     font-family: 'Trebuchet MS', sans-serif;
     background-color: indianred;
+}
+button {
+    background-color:aquamarine;
+    color:white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
 }
