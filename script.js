@@ -1,5 +1,5 @@
 
-document.getElementById(funnyButton).addEventListener("click", funnyMove);
+document.getElementById("funnyButton").addEventListener("click", funnyMove);
 
 function funnyMove(){
     alert("You've been alerted!");
