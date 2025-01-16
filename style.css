@@ -3,11 +3,17 @@ body{
     font-family: 'Trebuchet MS', sans-serif;
     background-color: indianred;
 }
-button {
-    background-color:crimson;
-    color:white;
+button{
     border: none;
     height: 36px;
     width: 105px;
     border-radius: 2px;
+}
+#funnyButton{
+    background-color:crimson;
+    color:white;
+}
+#clicked{
+    background-color:gray;
+    color:black;
 }
