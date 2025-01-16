@@ -10,8 +10,5 @@ function funnyMove(){
         button1.innerHTML = "Teehee";
         button1.id = "clicked";
     }
-    
-    
-    
-    
+    clicked = !clicked;
 }
