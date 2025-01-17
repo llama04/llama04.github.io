@@ -15,5 +15,5 @@ function funnyMove(){
 }
 
 function mainPage(){
-    window.location.href="./webpage2.html";
+    window.location.href="webpage2.html";
 }
