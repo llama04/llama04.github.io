@@ -9,6 +9,7 @@ button{
     width: 105px;
     border-radius: 5px;
     font-weight: bold;
+    cursor:pointer;
 }
 #funnyButton{
     background-color:crimson;
