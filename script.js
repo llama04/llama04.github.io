@@ -13,3 +13,6 @@ function funnyMove(){
     }
     clicked = !clicked;
 }
+function mainPage(){
+    window.location.href="./webpage2.html";
+}
