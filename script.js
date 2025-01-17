@@ -10,7 +10,6 @@ function funnyMove(){
         let button1 = document.getElementById("funnyButton");
         button1.innerHTML = "Teehee";
         button1.id = "clicked";
-        
     }
     clicked = !clicked;
 }
