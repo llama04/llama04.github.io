@@ -13,7 +13,6 @@ function funnyMove(){
     }
     clicked = !clicked;
 }
-
-function mainPage(){
-    window.location.href="./mainWiki.html";
+function goLogin(){
+    window.location.href="/";
 }
