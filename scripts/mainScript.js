@@ -14,5 +14,5 @@ function funnyMove(){
     clicked = !clicked;
 }
 function goLogin(){
-    window.location.href="/";
+    window.location.href="./login.html";
 }
