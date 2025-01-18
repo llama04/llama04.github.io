@@ -19,6 +19,9 @@ button{
     color:white;
     text-decoration: none;
 }
+.rightside{
+    float:right;
+}
 #funnyButton{
     background-color:crimson;
     color:white;
