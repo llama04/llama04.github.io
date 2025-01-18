@@ -6,7 +6,7 @@ body{
 }
 button{
     border: none;
-    margin:5px;
+    margin-left:5px;
     height: 36px;
     width: 105px;
     border-radius: 5px;
