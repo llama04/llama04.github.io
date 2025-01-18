@@ -12,6 +12,10 @@ button{
     font-weight: bold;
     cursor:pointer;
 }
+.header{
+    font-size:2em;
+    font-weight: bold;
+}
 #funnyButton{
     background-color:crimson;
     color:white;
