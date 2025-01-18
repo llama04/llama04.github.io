@@ -22,7 +22,15 @@ button{
 .rightside{
     float:right;
 }
-#funnyButton{
+#loginBtn{
+    background-color:antiquewhite;
+    color:black;
+}
+#signupBtn{
+    background-color:cornflowerblue;
+    color:white;
+}
+#funnyBtn{
     background-color:crimson;
     color:white;
 }

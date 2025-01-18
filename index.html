@@ -5,7 +5,13 @@
         <script src="scripts/mainScript.js"></script>
     </head>
     <body>
-        <div><a href="/" class="header">Minecraft Wiki</a><span class="rightside"><button type="button" onclick="goLogin()">Login</button><button type="button" onclick="goCreateAcc()">Create account</button></span></div>
+        <div>
+            <a href="/" class="header">Minecraft Wiki</a>
+            <span class="rightside">
+                <button type="button" id="loginBtn" onclick="goLogin()">Log In</button>
+                <button type="button" id="signupBtn" onclick="goRegister()">Sign Up</button>
+            </span>
+        </div>
         <p><h2>Grass</h2>
             <img src="images/Grass_Block.webp"><br>
             Common block found in grassy areas that can be turned into dirt and farmland and stuff.
@@ -24,7 +30,7 @@
                 <li>turn into cobblestone</li>
             </ul>
         </p>
-        <button type="button" onclick="funnyMove()" id="funnyButton">Click me</button>
+        <button type="button" onclick="funnyMove()" id="funnyBtn">Click me</button>
         <p><a href="https://youtu.be/unRldLdllZ8?si=LBLSWeeWLR77px4p" target="_blank">Video here</a></p>
     </body>
 </html>

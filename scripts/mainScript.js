@@ -16,6 +16,6 @@ function funnyMove(){
 function goLogin(){
     window.location.href="./login.html";
 }
-function goCreateAcc(){
-    window.location.href="./create-account.html";
+function goRegister(){
+    window.location.href="./register.html";
 }
