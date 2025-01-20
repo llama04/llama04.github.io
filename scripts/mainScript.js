@@ -13,8 +13,9 @@ function funnyMove(){
     }
     clicked = !clicked;
 }
-function goLogin(){
-    window.location.href="./login.html";
+function showLogin(){
+    document.getElementById("popup").classList.toggle("show");
+
 }
 function goRegister(){
     window.location.href="./register.html";
