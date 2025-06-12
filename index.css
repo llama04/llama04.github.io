@@ -59,13 +59,6 @@ body {
     color: var(--bodyTextColor);
 }
 
-#myprojects .cs-content {
-    text-align: left;
-    align-items: flex-start;
-}
-#myprojects .cs-item {
-    grid-column: span 3;
-}
 #intro {
     padding: var(--sectionPadding);
     background-color: #fdfaf8;
