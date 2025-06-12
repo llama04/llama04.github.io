@@ -66,26 +66,26 @@ body {
 #myprojects .cs-item {
     grid-column: span 3;
 }
-#welcome .cs-container {
+#intro .cs-container {
     flex-direction: row;
     align-items: stretch;
 }
-#welcome .cs-content {
+#intro .cs-content {
     text-align: left;
     align-items: flex-start;
     align-self: center;
 }
-#welcome .cs-image-group {
+#intro .cs-image-group {
     font-size: min(1.3vw, 1rem);
     min-height: 26.75em;
     height: auto;
 }
-#welcome .cs-picture1 {
+#intro .cs-picture1 {
     height: auto;
     top: 3.875em;
     bottom: 2.625em;
 }
-#welcome .cs-picture2 {
+#intro .cs-picture2 {
     height: auto;
     top: 1.25em;
     bottom: 0em;
