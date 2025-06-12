@@ -58,13 +58,6 @@ body {
     color: var(--bodyTextColor);
 }
                             
-
-body{
-    color:white;
-    font-family: 'Trebuchet MS', sans-serif;
-    background-color: indianred;
-    padding-left: 10px;
-}
 button{
     border: none;
     margin-left:5px;
