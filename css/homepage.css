@@ -1,0 +1,319 @@
+:root {
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #ff6a3e;
+    --primaryLight: #ffba43;
+    --secondary: #883c09;
+    --secondaryLight: #43baff;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+
+#intro {
+    padding: var(--sectionPadding);
+    background-color: #fdfaf8;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+  #intro .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #intro .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 36.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #intro .cs-title {
+    max-width: 30ch;
+  }
+  #intro .cs-text {
+    margin-bottom: 2rem;
+  }
+  #intro .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    padding: 0 1.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--primary);
+    color: var(--bodyTextColorWhite);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #intro .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #intro .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #intro .cs-image-group {
+    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+    font-size: min(2.17vw, .8rem);
+    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+    width: 41.875em;
+    height: 26.75em;
+    position: relative;
+    z-index: 1;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    order: -1;
+  }
+  #intro .cs-picture {
+    display: block;
+    position: absolute;
+  }
+  #intro .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #intro .cs-picture1 {
+    width: 16.5625em;
+    height: 20.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+  }
+  #intro .cs-picture1::before {
+    content: "";
+    width: 14.125em;
+    height: 63.271605%;
+    border: 0.25em solid var(--primaryLight);
+    position: absolute;
+    bottom: -1.25em;
+    left: -1.25em;
+    z-index: -1;
+  }
+#intro .cs-picture2 {
+  width: 21.5625em;
+  height: 25.5em;
+  top: 1.25em;
+  right: 1.25em;
+}
+#intro .cs-picture2::before {
+  content: "";
+  width: 12.3125em;
+  height: 57.598039%;
+  border: 0.25em solid var(--primaryLight);
+  position: absolute;
+  top: -1.25em;
+  right: -1.25em;
+  z-index: -1;
+}
+
+#myprojects {
+  padding: var(--sectionPadding);
+  position: relative;
+  z-index: 10;
+}
+#myprojects .cs-container {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: clamp(3rem, 6vw, 4rem);
+}
+#myprojects .cs-content {
+  /* set text align to left if content needs to be left aligned */
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* centers content horizontally, set to flex-start to left align */
+  align-items: center;
+}
+
+#myprojects .cs-topper {
+  color: #767676;
+}
+#myprojects .cs-title {
+  max-width: 25ch;
+  margin: 0;
+}
+#myprojects .cs-card-group {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* 16px - 20px */
+  gap: clamp(1rem, 2vw, 1.25rem);
+}
+#myprojects .cs-item {
+  text-align: center;
+  list-style: none;
+  width: 100%;
+  height: 19.0625rem;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  border-radius: 1.5rem;
+  /* clips background image corners */
+  overflow: hidden;
+  box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+  /* prevents padding and border from affecting height and width */
+  box-sizing: border-box;
+  grid-column: span 12;
+  grid-row: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+  grid-column: span 3;
+}
+#myprojects .cs-item:hover .cs-background:before {
+  background-color: var(--primary);
+  opacity: 0.84;
+}
+#myprojects .cs-item:hover .cs-background img {
+  transform: scale(1.2);
+}
+#myprojects .cs-link {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and widht of the link */
+  padding: 1.5rem;
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myprojects .cs-h3 {
+  font-size: 1.5625rem;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-align: inherit;
+  margin: 0;
+  color: var(--bodyTextColorWhite);
+  transition: color 0.3s;
+}
+#myprojects .cs-span {
+  /* forces the h3 to alwasy be two lines */
+  display: block;
+}
+#myprojects .cs-background {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#myprojects .cs-background:before {
+  /* background color overlay */
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition:
+      background-color 0.3s,
+      opacity 0.3s;
+}
+#myprojects .cs-background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* Makes img tag act as a background image */
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+
+
